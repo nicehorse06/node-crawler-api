@@ -1,0 +1,11 @@
+# for richard
+node_modules/*
+
+# for vscode
+/.vscode/
+
+# for .js.swp
+*.js.awp
+
+# for security data
+local*
