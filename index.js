@@ -1,6 +1,6 @@
 const express = require('express');
-const tjc_linebotParser = require('./project_list/tjc/index')
 const jimmy_assistant = require('./project_list/jimmy_assistant/index')
+const Ptt_img_crawler = require('./api/ptt_beauty/ptt_beauty_crawler')
 
 const app = express();
 
@@ -8,11 +8,22 @@ app.get('/', (req, res) => {
   res.send('wellcome my channel，此為chat bot的測試首頁!')
 });
 
-// for 個人 chatbot
-app.post('/line/assistant', jimmy_assistant);
+const pretty_api = () => {
+  const ptt_img_crawler = new Ptt_img_crawler({
+    url_index: 2000,
+    page_index: 0,
+    push: 0
+  })
+  console.log('qwerty')
+  return ptt_img_crawler.beauty_image_api().then((article) => {
+    return article
+  }).catch(() => {})
 
-// for TJC 相關專案
-app.post('/line/tjc', tjc_linebotParser);
+}
+
+app.get('/pretty', (req, res) => {
+  res.send('wellcome my channel，此為chat bot的測試首頁!')
+});
 
 var server = app.listen(process.env.PORT || 8080, function () {
   var port = server.address().port;

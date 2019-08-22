@@ -7,7 +7,8 @@ const LAST_URL_INDEX = 'LAST_URL_INDEX'
 
 class Ptt_img_crawler {
 	constructor({ url_index = -1, page_index = 0, push = 0 } = {}) {
-		this.url_index = Number(url_index) // 如果 url_index 小於 0，則使用class裡的方法取得 index
+		// todo 會有錯誤 Cannot read property 'url_index' of undefined
+		this.url_index = Number(url_index) || 0 // 如果 url_index 小於 0，則使用class裡的方法取得 index
 		this.page_index = Number(page_index)
 		this.push = Number(push)
 		this.page_article_nums = 0
