@@ -34,3 +34,4 @@
 * [iT 鐵人 30天 爬蟲始終來自於墮性](https://ithelp.ithome.com.tw/users/20107159/ironman/1325)
 * [twtrubiks/PTT_Beauty_Spider](https://github.com/twtrubiks/PTT_Beauty_Spider) PTT 表特版爬蟲圖片下載器
 * [給初學者的 Python 網頁爬蟲與資料分析 (1) 前言](http://blog.castman.net/%E6%95%99%E5%AD%B8/2016/12/19/python-data-science-tutorial-1.html)
+* [爬虫入门系列（一）：快速理解HTTP协议](https://foofish.net/understand-http.html)
