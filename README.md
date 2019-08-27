@@ -5,11 +5,13 @@
 
 * 找發http的方法: [Requests](https://2.python-requests.org/en/master/)
 * 學習解析套件 [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-## `Scrapy` vs `requests + beautifulsoup`
-## Scrapy
-* 全面爬蟲框架
-## requests + beautifulsoup
-* 套件
+### `Scrapy` vs `requests + beautifulsoup`
+* Scrapy
+	* 全面爬蟲框架
+	* 功能性強、全面
+* requests + beautifulsoup
+	* 純套件
+	* 可客製化高
 
 ## 實用指令
 * 儲存套件版本 `pip freeze > requirements.txt`
