@@ -14,7 +14,6 @@ const pretty_api = () => {
     page_index: 0,
     push: 0
   })
-  console.log('qwerty')
   return ptt_img_crawler.beauty_image_api().then((article) => {
     return article
   }).catch(() => {})

@@ -10,9 +10,11 @@ const fetch = (url) => {
 
 class Ptt_img_crawler {
 	constructor({ url_index = -1, page_index = 0, push = 0 } = {}) {
-		// todo 會有錯誤 Cannot read property 'url_index' of undefined
+		// 如https://www.ptt.cc/bbs/Beauty/index2620.html，url_index為2620
 		this.url_index = Number(url_index) || 0 // 如果 url_index 小於 0，則使用class裡的方法取得 index
+		// 該網址中，第幾個文章
 		this.page_index = Number(page_index)
+		// 過濾推文數
 		this.push = Number(push)
 		this.page_article_nums = 0
 		this.article = {}
@@ -20,7 +22,7 @@ class Ptt_img_crawler {
 	}
 
 	get_last_page_index() {
-		// 功能為得到表特版首頁的index數目，如 https://www.ptt.cc/bbs/Beauty/index2620.html
+		// 功能為得到表特版首頁的index數目，如 https://www.ptt.cc/bbs/Beauty/index2620.html 的2620
 		// 目前開發階段先回傳前一頁的index數目
 		if (this.url_index < 0) {
 			return fetch(beauty_url)
