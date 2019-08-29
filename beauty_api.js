@@ -111,7 +111,7 @@ class Ptt_img_crawler {
 			})
 	}
 
-	// 參數用物件才有辦法設置多個默認參數
+	// 參數用物件才有辦法設置多個默認參數，實際呼叫抓取ptt的函示
 	beauty_image_api() {
 		/*
 		  回傳 article
