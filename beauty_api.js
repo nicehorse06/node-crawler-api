@@ -16,8 +16,11 @@ class Ptt_img_crawler {
 		this.page_index = Number(page_index)
 		// 過濾推文數
 		this.push = Number(push)
+		// 該page所有文章的數目
 		this.page_article_nums = 0
+		// 最後beauty_image_api回傳的圖片列表
 		this.article = {}
+		// 用來記錄已檢查符合條件的頁面數量
 		this.last_page_counter = 0
 	}
 
@@ -167,8 +170,9 @@ class Ptt_img_crawler {
 				}
 			})
 			.then((images) => {
-				// 如果已經對article封裝過，排除遞迴的影響
 				let article = this.article
+				// 準備文章發出，重新計算上一頁抓取數量
+				this.last_page_counter = 0
 				// 此處的 article 宣告如果沒有加 let 會報錯
 				if (article.url_index) {
 					return article
