@@ -1,5 +1,6 @@
 # Pretty API
 
+
 ## 目標
 * 在GCP上架設表特API
 
@@ -20,3 +21,4 @@
 * [PTT 表特版 API](https://ithelp.ithome.com.tw/articles/10191505)
  
 * Fetch API
+
