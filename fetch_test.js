@@ -6,9 +6,20 @@ var headers = {
     'Cookie': 'over18=1;'
 };
 
-// const result = await fetch(`/some/url`, {headers});
+// 沒有包裝
 fetch(ptt_beauty_url, {headers}).then(response => {
 	return response.text()
 }).then((body) => {
 	console.log(body)
+})
+
+// 包裝成函示
+const fetch_api = (url) => {
+	return fetch(url, {headers: {'Cookie': 'over18=1;'}})
+}
+
+fetch_api(ptt_beauty_url).then(response => {
+	return response.text()
+}).then((body) => {
+	// console.log(body)
 })
