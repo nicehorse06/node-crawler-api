@@ -7,9 +7,13 @@
 	* [[Node.js] 用 mocha 做單元測試並整合 Travis-CI](https://larrylu.blog/nodejs-mocha-travis-ci-unit-test-e859a9446e16)
 	* [[Node.js打造API] 使用mocha來做單元測試](https://andy6804tw.github.io/2018/01/15/api-test/)
 	* [在 Node.js 中为 Restful API 编写单元测试](https://scarletsky.github.io/2016/10/05/write-unit-tests-for-restful-api-in-nodejs/)
+* 可開放的API
+	* 回傳首頁index的api，`get_last_page_index`
+	* 得到一個index頁面的所有文章資訊`get_articles_from_page`
+	* 給定網址index、頁面index、推文數來回傳對應文章、`beauty_image_api`
+* 有清楚的使用api方法在 README
 * 有token檢驗
 * 有更多的表特圖來源
-* 有清楚的使用api方法
 * 更了解promise跟await
 
 ## 使用的套件參考網址:
