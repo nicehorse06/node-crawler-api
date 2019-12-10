@@ -1,5 +1,7 @@
 # Pretty API
 
+cloud_function.js 為 GCP serverless的版本
+
 ## todo
 * 在GCP上架設表特API
 * 有基礎的nginx server設定
